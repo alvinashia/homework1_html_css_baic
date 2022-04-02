@@ -1,0 +1,185 @@
+body{
+  font-family: "Noto Sans TC", Roboto, 微軟正黑體, sans-serif;
+}
+nav {
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 70px;
+}
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 380px;
+}
+.logo img {
+  width: 400px;
+}
+.title_right {
+  width: 400px;
+  text-align: right;
+  position: absolute;
+  left: 1020px;
+  bottom: -13px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+}
+.title_right a {
+  font-family: "Noto Sans TC";
+  font-weight: 600;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  line-height: 70px;
+}
+.title_right a:last-child {
+  border: 2px solid #000;
+  border-radius: 50px;
+  background-color: #f05c6f;
+
+  /* p5-10 */
+  padding: 5px 10px;
+}
+.join_class a {
+  background-color: rgb(197, 67, 95);
+  color: aliceblue;
+  border: 0 solid;
+  border-radius: 10px;
+  font-family: "Noto Sans TC";
+  font-weight: 600;
+}
+
+.fb {
+  position: absolute;
+  left: 1450px;
+  bottom: 15px;
+  width: 36px;
+}
+
+.up {
+  background-image: url(./bg_grey\ \(5\).svg);
+  background-size: cover;
+  width: 100%;
+  height: 110%;
+  padding: 100px 300px 300px 55px;
+  text-align: center;
+  overflow: auto;
+  bottom: 10px;  
+}
+
+.up_pic img{
+ margin: auto;
+ width: 90vw;
+}
+.down_pic{
+padding: 18px 0 0 270px;
+font-size: 1.375rem;
+line-height: 30px;
+  }
+
+.down_pic img{
+  width: 650px;
+  padding: -15px 40px 0 20px ;
+      }
+
+.down_pic p{
+  font-family: "Noto Sans TC";
+  font-weight: 400;
+  padding: 0 0 20px 0;
+  
+}
+.down_pic p span{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.75rem;
+}
+/* .mar_1 {
+  background-color: #505aa7;
+  width: 100%;
+  height: 5px;
+} */
+/* 有邊際綫消不掉 */
+
+.back_one{
+  background-color: #41528e;
+  width: 100%;
+  height: 180px;
+  overflow: auto;
+}
+.back_one h1{
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  background-color: #41528e;
+  padding: 65px 10px 75px 400px;
+  /* height: 180px; */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 40px;
+}
+.person {
+  float: right;
+  font-weight: 600;
+  text-decoration: none;
+  width: auto;
+  margin: 60px;
+  color: #edd600;
+  line-height: 70px;
+}
+.p1{
+  position: absolute;
+  left: 720px;
+  top: 1180px;
+  font-size: 25px;}
+.p2{
+    position: absolute;
+    left: 1000px;
+    top: 1180px;
+    font-size: 25px;}
+.p3{
+   position: absolute;;
+      left: 1250px;
+      top: 1180px;
+      font-size: 25px;}
+
+p.t1 {
+  position: absolute;
+  left: 720px;
+  top: 1250px;
+  font-size: 1rem;
+  color: #fff;}
+
+p.t2{
+  position: absolute;
+  left: 1000px;
+  top: 1250px;
+  font-size: 1rem;
+  color: #fff;}
+
+p.t3{
+  position: absolute;
+  left: 1250px;
+  top: 1250px;
+  font-size: 1rem;
+  color: #fff;}
+
+
+  /* 可以用padding或者是high來調高度，一般業界是使用padding,而不是用high的絕對高度* /
+
+/* 如何講兩張圖疊在一起 */
+/* z-index? 需要設absoulute 跟relative 會亂掉 就算都用ab疊成功也看不到第一張圖 */
+/* .up{
+position:absolute;
+z-index:1
+}
+.up_pic{
+  position:absolute;
+z-index:2
+} */
+/* 設backgrong-img 變得底層會跟著圖片一起跑 */
+/* .up{
+  background-image: url(./bg_grey.svg);
+  background-size: cover;
+}
+.up_pic{
+} */
