@@ -35,7 +35,6 @@ nav {
   border: 2px solid #000;
   border-radius: 50px;
   background-color: #f05c6f;
-  /* p5-10 */
   padding: 5px 10px;
 }
 .join_class a {
@@ -45,6 +44,7 @@ nav {
   border-radius: 10px;
   font-weight: 600;
 }
+
 .fb {
   position: absolute;
   left: 1450px;
@@ -58,7 +58,6 @@ nav {
   height: 110%;
   padding: 81px 334px 305px 55px;
   text-align: center;
-  overflow: auto;
   bottom: 10px;
 }
 
@@ -77,7 +76,8 @@ nav {
 }
 .down_pic p {
   font-weight: 400;
-  padding: 0 0 20px 0;
+  text-align: center;
+  padding: 20px 0 0 0;
 }
 .down_pic p span {
   font-family: "Oswald", sans-serif;
@@ -87,9 +87,7 @@ nav {
   font-weight: 600;
   width: auto;
 }
-p.t1,
-.t2,
-.t3 {
+p.tt {
   font-size: 1rem;
   color: #fff;
 }
@@ -116,8 +114,7 @@ div.container {
   padding: 0 0 10px 0;
   font-size: 25px;
 }
-.p2,
-.p3 {
+.p2 {
   font-weight: 600;
   color: #edd600;
   font-size: 25px;
@@ -147,12 +144,10 @@ div.container_3 {
   margin: 0 auto;
   align-items: center;
 }
-.block_1,
-.block_2,
-.block_3 {
+.block {
   display: flex;
   padding: 30px 0 0 10px;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-around;
 }
 .mark {
@@ -198,7 +193,7 @@ h5 {
 .container_4 {
   background-color: #eff0f0;
   width: 1903px;
-  height: 469.94px;
+  height: 520px;
 }
 .list_1 {
   height: 314px;
@@ -232,17 +227,17 @@ h5 {
   margin: 10px 0 0 -5px;
 }
 
-.img_glay {
+.img_grey {
   width: 445px;
   height: 373.94px;
   margin: 0 auto;
-  padding: 25px 0 0 0;
+  padding: 40px 0 0 0;
 }
 
 .container_5 {
   background-color: #505aa7;
   width: 1903px;
-  height: 450px;
+  height: 420px;
 }
 
 .container_5 h3 {
@@ -263,7 +258,7 @@ h5 {
 .teacher_descript {
   widows: 665px;
   height: 218px;
-  margin: 0 0 0 -400px;
+  margin: 0 0 0 30px;
   padding: 0 400px 0 0;
 }
 
@@ -297,14 +292,16 @@ h5 {
 .container_6 {
   background-color: #eff0f0;
   width: 1903px;
-  height: 347.3px;
+  height: 360px;
 }
-.container_6 h3 {
+.container_6 h3,
+.container_9 h3,
+.container_11 h3 {
   text-align: center;
   font-size: 2.25rem;
   font-weight: 600;
   line-height: 1.5;
-  padding: 40px 0 10px 0;
+  padding: 60px 0 10px 0;
 }
 
 div.feedback {
@@ -314,7 +311,6 @@ div.feedback {
   align-items: center;
   justify-content: space-around;
   flex-grow: 1;
-  margin: 0 0 0 400px;
 }
 
 .feedback_content h3 {
@@ -330,22 +326,277 @@ div.feedback {
   text-align: center;
 }
 
-/* 可以用padding或者是high來調高度，一般業界是使用padding,而不是用high的絕對高度* /
+.event_pic {
+  width: 1903px;
+  height: 200px;
+  overflow: hidden;
+  font-size: 0;
+}
 
-/* 如何講兩張圖疊在一起 */
-/* z-index? 需要設absoulute 跟relative 會亂掉 就算都用ab疊成功也看不到第一張圖 */
-/* .up{
-position:absolute;
-z-index:1
+/*-------------------------------------------------- 如何讓最後一張圖也縮上去？--------*/
+.event_pic img {
+  width: 400px;
 }
-.up_pic{
-  position:absolute;
-z-index:2
-} */
-/* 設backgrong-img 變得底層會跟著圖片一起跑 */
-/* .up{
-  background-image: url(./bg_grey.svg);
-  background-size: cover;
+.inline_block {
+  display: inline-block;
 }
-.up_pic{
-} */
+
+.container_7 {
+  background-color: #505aa7;
+  width: 1903px;
+  height: 670px;
+}
+
+.container_7 h3 {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 60px 0 10px 0;
+  color: #fff;
+}
+
+/*-------------------------------- 可以用padding或者是high來調高度，一般業界是使用padding,而不是用high的絕對高度*/
+.block_1 {
+  display: flex;
+  padding: 30px 0 0 10px;
+  justify-content: center;
+}
+.event_dis {
+  color: #fff;
+  width: 570px;
+  height: 370px;
+}
+.event_dis h4 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.event_dis span,
+.event_dis h5 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.event_dis p {
+  line-height: 1.5;
+}
+
+.event_dis a {
+  color: #fff;
+  text-decoration: none;
+}
+.event_dis a:hover {
+  color: #53a2d9;
+}
+
+.pdu {
+  width: 540px;
+  height: 40px;
+  background-color: #ffe600;
+  box-shadow: inset 0.5em 0em #344884;
+  padding: 7px 0 0 20px;
+  margin: 1rem 0;
+}
+.event_dis h6 {
+  line-height: 1.5;
+}
+.event_fee {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-left: 30px;
+}
+.event_fee h4 {
+  padding: 0 0 10px;
+}
+table,
+th,
+td {
+  border-collapse: collapse;
+  color: #000;
+}
+th,
+td {
+  background-color: #fff;
+  width: 150px;
+  height: 110px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1.5rem 1rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+th {
+  border-bottom: 2px solid #63686d;
+  font-weight: 600;
+}
+
+td span {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.125rem;
+}
+.table_pink {
+  background-color: #ec6d6e;
+  color: #fff;
+}
+
+.table_grey {
+  background-color: #efefee;
+}
+
+.register {
+  background-color: #ec6d6e;
+  color: aliceblue;
+  border: 0 solid;
+  border-radius: 30px;
+  font-weight: 600;
+  width: 194px;
+  height: 58px;
+  text-align: center;
+  padding: 18px 0 0 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 auto;
+}
+.register:hover {
+  background-color: #000;
+}
+
+.register:visited {
+  background-color: #007bff;
+}
+.register a {
+  text-decoration: none;
+  color: white;
+}
+.container_8 {
+  width: 1903px;
+  height: 436px;
+  background-color: #fff;
+}
+.threeyear {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 50px 0 30px 0;
+}
+.threeyear span {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  color: #505aa7;
+  margin: 2px;
+}
+.class_time {
+  background-color: #505aa7;
+  color: aliceblue;
+  border: 0 solid;
+  border-radius: 10px;
+  font-weight: 500;
+  width: 540px;
+  height: 180px;
+  text-align: center;
+  padding: 18px 0 0 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-left: 30px;
+}
+.class_time h5 {
+  line-height: 2.5em;
+}
+.class_time span {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.3rem;
+}
+
+.register_1 {
+  background-color: #17a2b8;
+  color: aliceblue;
+  border: 0 solid;
+  border-radius: 30px;
+  font-weight: 600;
+  width: 147px;
+  height: 44px;
+  text-align: center;
+  padding: 6px 0 0 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.register_1:hover {
+  background-color: #138192;
+}
+
+.register_1:visited {
+  background-color: #138192;
+}
+.register_1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.container_9 {
+  background-color: #eff0f0;
+  width: 1903px;
+  height: 478px;
+}
+
+.reading_pic img {
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+.reading a {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.block_2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.link_reading {
+  width: 255px;
+  height: 106px;
+}
+
+.container_10 {
+  width: 1903px;
+  height: 200px;
+}
+.group_tickets {
+  text-align: center;
+  padding-top: 50px;
+  background-color: #fff;
+}
+
+.container_11 {
+  width: 1903px;
+  height: 750px;
+}
+
+.question h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  text-align: left;
+  margin-top: -20px;
+}
+.question p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  padding-bottom: -20px;
+}
+.question span a {
+  text-decoration: none;
+  color: #ec6d6e;
+}
+.question span a:hover {
+  color: #17a2b8;
+}
