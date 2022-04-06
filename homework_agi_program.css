@@ -130,9 +130,9 @@ div.container_2 {
   width: 1903px;
 }
 
-.highlights{
-text-align: center;
-min-width: 1100px;
+.highlights {
+  text-align: center;
+  min-width: 1100px;
 }
 
 div.container_3 {
@@ -341,7 +341,7 @@ div.feedback {
   font-size: 0;
 }
 
-.pic_hidden{
+.pic_hidden {
   width: 1903px;
   overflow: hidden;
 }
