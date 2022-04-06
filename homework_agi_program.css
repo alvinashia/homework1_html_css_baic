@@ -54,8 +54,7 @@ nav {
 .up {
   background-image: url(./bg_grey.svg);
   background-size: cover;
-  width: 100%;
-  height: 110%;
+  width: 1903px;
   padding: 81px 334px 305px 55px;
   text-align: center;
   bottom: 10px;
@@ -98,6 +97,7 @@ div.container {
   background-color: #41528e;
   justify-content: space-between;
   padding: 75px 400px;
+  width: 1903px;
   /* display的flax屬性是可以讓原本垂直的div變成一排，要平均分配的話很好用 
   justyfy content的 space-around*/
 }
@@ -335,13 +335,18 @@ div.feedback {
 }
 
 .event_pic {
-  width: 1903px;
+  width: 2000px;
   height: 200px;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-size: 0;
 }
 
-/*-------------------------------------------------- 如何讓最後一張圖也縮上去？--------*/
+.pic_hidden{
+  width: 1903px;
+  overflow: hidden;
+}
+
+/*- 如何讓最後一張圖也縮上去？A:先爆版再套一層div用hidden蓋住--------*/
 .event_pic img {
   width: 400px;
 }
